@@ -75,6 +75,18 @@ las redes sociales autorizadas, etc, son elementos únicos y configurables de ma
 individual para cada usuario de la aplicación, por lo tanto, debe garantizarse su
 privacidad por medio de la capa de autenticación.
 
+## Requerimients funcionales
+
+- Incluye formulario para el registro de nuevos usuarios, login y logout 
+- Implementa mecanismo para mantener la privacidad del espacio de trabajo 
+- Implementa autorización de publicación en nombre del usuario, en al menos dos redes sociales (Twitter, Facebook, Linkedin, Instagram, Pinterest), por medio de oAuth.
+- Permite el registro de entradas (instantáneas, en cola, programadas) 
+- Presenta el catálogo de horarios de publicaciones (CRUD) 
+- Implementa la cola de publicaciones (ver historial y pendientes) 
+- Procesa las entradas en cola de publicaciones de acuerdo a la hora establecida 
+- Las publicaciones se muestran satisfactoriamente en las redes sociales de destino 
+- Implementa el segundo factor de autenticación 
+
 ## TODO LIST
 
 - [ ] Pantalla de login y registro de usuarios
