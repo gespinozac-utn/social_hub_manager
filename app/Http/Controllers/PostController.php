@@ -10,7 +10,13 @@ class PostController extends Controller
 
     public function index()
     {
-        
+        if(auth())
+        {
+            return view('components.layout')->with('Success Log in!');
+        }else
+        {
+            return redirect('/login');
+        }
     }
 
     public function show()

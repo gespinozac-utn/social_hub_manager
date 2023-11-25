@@ -26,24 +26,6 @@
 
         <div class="mb-6">
             <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
-                for="username"
-            >
-                Username
-            </label>
-            <input class="border border-gray-400 p-2 w-full"
-                type="text" 
-                name="username" 
-                id="userame"
-                value="{{old('username')}}"
-                required
-            >
-            @error('username')
-                <p class="text-red-500 text-xs  mt-1">{{$message}}</p>
-            @enderror
-        </div>
-
-        <div class="mb-6">
-            <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
                 for="email"
             >
                 Email
@@ -64,14 +46,13 @@
             <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
                 for="phone"
             >
-                Phone (####-####)
+                Phone
             </label>
             <input class="border border-gray-400 p-2 w-full"
                 type="tel" 
                 name="phone" 
                 id="phone"
-                placeholder="1234-5678"
-                pattern="[0-9]{4}-[0-9]{4}"
+                placeholder="12345678"
                 value="{{old('phone')}}"
                 required
             >
