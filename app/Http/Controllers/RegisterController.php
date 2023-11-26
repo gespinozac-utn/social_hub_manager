@@ -20,7 +20,7 @@ class RegisterController extends Controller
             'password' => 'required|max:255|min:7'
         ]);
         
-        $attributes['phone'] = '+506'.$attributes['phone'];
+        //$attributes['phone'] = '+506'.$attributes['phone'];
 
         $user = User::create($attributes);
 
