@@ -7,11 +7,11 @@
             <h4 class="font-semibold mb-4">Links</h4>
             <ul>
                 <li>
-                    <a href="/admin/posts" class="{{ request()->is('admin/posts') ? 'text-blue-500' : ''}}">All Post</a>
+                    <a href="/" class="{{ request()->is('/') ? 'text-blue-500' : ''}}">All Post</a>
                 </li>
-                <li>
-                    <a href="/admin/posts/create" class="{{ request()->is('admin/posts/create') ? 'text-blue-500' : ''}}">New Post</a>
-                </li>
+                {{-- <li>
+                    <a href="/" class="{{ request()->is('/') ? 'text-blue-500' : ''}}">Settings</a>
+                </li> --}}
             </ul>
         </aside>
     

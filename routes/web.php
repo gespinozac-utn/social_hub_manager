@@ -11,8 +11,7 @@ use App\Http\Controllers\Auth\TwoFactorController;
 Route::get('/',[PostController::class,'index'])->name('home');
 
 // Session
-
-Route::post('logout',[SessionsController::class,'destroy'])->middleware('auth');
+Route::post('logout',[SessionsController::class,'destroy'])->middleware('auth')->name('logout');
 
 Route::get('login',[SessionsController::class,'create'])->middleware('guest')->name('login');
 Route::post('sessions',[SessionsController::class,'store'])->middleware('guest');

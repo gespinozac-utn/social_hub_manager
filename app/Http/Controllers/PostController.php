@@ -3,19 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use App\Models\Post;
+use App\Models\Post;
 
 class PostController extends Controller
 {
 
     public function index()
     {
-        if(auth())
+        if(auth()->check())
         {
-            return view('components.layout')->with('Success Log in!');
+            return view('admin.posts.index',[
+                'posts'=>Post::where('user_id',auth()->user()->id)->get()
+            ])
+                ->with('Success Log in!');
         }else
         {
-            return redirect('/login');
+            return redirect(route('login'));
         }
     }
 

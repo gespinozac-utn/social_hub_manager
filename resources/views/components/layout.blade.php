@@ -28,8 +28,8 @@
                         <x-slot name="trigger">
                             <button>Welcome, {{ auth()->user()->name }}!</button>
                         </x-slot>
-                        <x-dropdown-item href="/post/create">Post</x-dropdown-item>
-                        <x-dropdown-item href="/settings">Settings</x-dropdown-item>                     <x-dropdown-item href="#" x-data="{}" @click.prevent="document.querySelector('#logout-form').submit()">Log out</x-dropdown-item> 
+                        <x-dropdown-item href="/">Post</x-dropdown-item>
+                        {{-- <x-dropdown-item href="/settings">Settings</x-dropdown-item>   --}}                  <x-dropdown-item href="#" x-data="{}" @click.prevent="document.querySelector('#logout-form').submit()">Log out</x-dropdown-item>  
 
                         <form id="logout-form" method="POST" action="/logout" class="hidden">
                             @csrf
