@@ -3,8 +3,7 @@ Carrera:  Ingeniería del software.
 Curso:    Aplicaciones Web utilizando Software Libre.  
 Profesor: Misael Matamoros Soto.  
 Alumnos :    
-- Gustavo Espinoza Corrales.  
-- Diego Umaña.    
+- Gustavo Espinoza Corrales.   
 
 III Cuatrimestre 2023.
 
@@ -89,11 +88,11 @@ privacidad por medio de la capa de autenticación.
 
 ## TODO LIST
 
-- [ ] Pantalla de login y registro de usuarios
-    - [ ] Págine de registro de usuarios
-    - [ ] Página de inicio de sessión de usuarios
-        - [ ] Usuario
-        - [ ] Contraseña
+- [X] Pantalla de login y registro de usuarios
+    - [X] Págine de registro de usuarios
+    - [X] Página de inicio de sessión de usuarios
+        - [X] Usuario
+        - [X] Contraseña
 - [ ] Integración con redes sociales
     - [ ] Cada usuario podrá vincular cuentas de redes sociales
     - [ ] Soporte al menos de 2 de las redes sociales mas populares (facebook,twitter,instagram,etc)
@@ -101,9 +100,9 @@ privacidad por medio de la capa de autenticación.
     - [ ] Pantalla para publicación de entradas
     - [ ] Entradas simultáneas o individuales en cualquire red social agregada
     - [ ] publicación
-        - [ ] Instantanea
-        - [ ] En cola
-        - [ ] Programada fecha y hora específica
+        - [X] Instantanea
+        - [X] En cola
+        - [X] Programada fecha y hora específica
 - [ ] Horarios de publicación
     - [ ] Crear
         - [ ] Registrar varias entradas el mismo día diferente hora
@@ -113,9 +112,9 @@ privacidad por medio de la capa de autenticación.
 - [ ] Cola de publicaciones
     - [ ] Se enviará a la red social a la hora y fecha establecidos
     - [ ] Cada usuario podra consultar su cola de publicaciones
-        - [ ] Historial de publicaciones
-        - [ ] Publicaciones pendientes
-- [ ] Segundo factor de autenticación
-    - [ ] Implementar MFA o 2FA
+        - [X] Historial de publicaciones
+        - [X] Publicaciones pendientes
+- [X] Segundo factor de autenticación
+    - [X] Implementar MFA o 2FA
 - [ ] Espacio privado de trabajo
     - [ ] Cada configuración, publicación, horarios; son privados por usuario

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\TwilioController;
 
 class SessionsController extends Controller
 {
@@ -16,9 +17,13 @@ class SessionsController extends Controller
             'password' => 'required'
         ]);
 
+        $twilio = new TwilioController();
+
         if(auth()->attempt($attribute)){
+            $twilio->get_otp(auth()->user()->phone);
             session()->regenerate();
-            return redirect('/')->with('success', 'Welcome back!');
+            return redirect('2fa');
+            // return redirect('2fa')->with('success', 'Welcome back!');
         }
 
         return back()

@@ -20,8 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('twilio/get',[TwilioController::class,'get_otp']);
-Route::post('twilio/verify',[TwilioController::class,'verify_otp']);
+// Route::post('twilio/get',[TwilioController::class,'get_otp']);
+// Route::post('twilio/verify',[TwilioController::class,'verify_otp']);
 
 Route::get('post/queue',[PostApiController::class,'queue']);
 Route::get('post/waiting',[PostApiController::class,'waiting']);
