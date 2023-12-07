@@ -20,9 +20,10 @@ class SessionsController extends Controller
         $twilio = new TwilioController();
 
         if(auth()->attempt($attribute)){
-            $twilio->get_otp(auth()->user()->phone);
+            //$twilio->get_otp(auth()->user()->phone);
             session()->regenerate();
-            return redirect('2fa');
+            return redirect('/');
+            //return redirect('2fa');
             // return redirect('2fa')->with('success', 'Welcome back!');
         }
 

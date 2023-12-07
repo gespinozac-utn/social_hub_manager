@@ -13,8 +13,10 @@ class PostController extends Controller
         if(auth()->check())
         {
             return view('admin.posts.index',[
-                'posts'=>Post::where('user_id',auth()->user()->id)->get()
-            ])
+                'posts'=>Post::where('user_id',auth()->user()->id)
+                    ->where('post_state_id',1)
+                    ->get()
+                ])
                 ->with('Success Log in!');
         }else
         {
@@ -24,7 +26,25 @@ class PostController extends Controller
 
     public function show()
     {
-        
+       return view('posts.all',[
+        'posts'=>Post::where('user_id',auth()->user()->id)
+            ->where('post_state_id','<>',1)
+            ->get()
+        ])
+        ->with('Success Log in!'); 
+    }
+
+    public function create()
+    {
+       return view('posts.all',[
+        'user'=>auth()->user()
+        ])
+        ->with('Success Log in!'); 
+    }
+
+    public function store()
+    {
+        // save post in the database
     }
 
     protected function verified_post()

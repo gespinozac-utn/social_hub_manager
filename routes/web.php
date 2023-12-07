@@ -8,7 +8,7 @@ use App\Http\Controllers\Auth\TwoFactorController;
 
 // Home
 
-Route::get('/',[PostController::class,'index'])->name('home')->middleware('2fa');
+Route::get('/',[PostController::class,'index'])->name('home');//->middleware('2fa');
 
 // Session
 Route::post('logout',[SessionsController::class,'destroy'])->middleware('auth')->name('logout');
@@ -20,6 +20,12 @@ Route::post('sessions',[SessionsController::class,'store'])->middleware('guest')
 Route::get('register',[RegisterController::class,'create'])->middleware('guest');
 Route::post('register',[RegisterController::class,'store'])->middleware('guest');
 
+// 2FA
 Route::get('2fa',[TwoFactorController::class,'show'])->name('2fa');
 Route::post('2fa',[TwoFactorController::class,'store'])->name('2fa.post');
 Route::get('2fa/verify',[TwoFactorController::class,'verify'])->name('2fa.verify');
+
+// Post
+Route::get('posts',[PostController::class,'show'])->name('posts');
+Route::get('posts/create',[PostController::class,'create'])->name('posts.create');
+Route::post('posts',[PostController::class,'store'])->name('posts.store');
