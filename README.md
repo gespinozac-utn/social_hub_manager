@@ -103,18 +103,18 @@ privacidad por medio de la capa de autenticación.
         - [X] Instantanea
         - [X] En cola
         - [X] Programada fecha y hora específica
-- [ ] Horarios de publicación
-    - [ ] Crear
+- [X] Horarios de publicación
+    - [X] Crear
         - [ ] Registrar varias entradas el mismo día diferente hora
     - [ ] Modificar
     - [ ] Eliminar
-    - [ ] Consultar
-- [ ] Cola de publicaciones
+    - [X] Consultar
+- [X] Cola de publicaciones
     - [ ] Se enviará a la red social a la hora y fecha establecidos
-    - [ ] Cada usuario podra consultar su cola de publicaciones
+    - [X] Cada usuario podra consultar su cola de publicaciones
         - [X] Historial de publicaciones
         - [X] Publicaciones pendientes
 - [X] Segundo factor de autenticación
     - [X] Implementar MFA o 2FA
-- [ ] Espacio privado de trabajo
-    - [ ] Cada configuración, publicación, horarios; son privados por usuario
+- [X] Espacio privado de trabajo
+    - [X] Cada configuración, publicación, horarios; son privados por usuario

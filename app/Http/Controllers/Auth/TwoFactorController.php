@@ -14,10 +14,10 @@ class TwoFactorController extends Controller
         return view('2fa');
     }
 
-    public function verify(Request $request)
-    {
+    // public function verify(Request $request)
+    // {
         
-    }
+    // }
 
     public function store(Request $request)
     {

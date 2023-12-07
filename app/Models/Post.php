@@ -10,6 +10,8 @@ class Post extends Model
 {
     use HasFactory;
 
+    protected $guarded=[];
+
     /**
      * Get the postState that owns the Post
      *
