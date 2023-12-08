@@ -23,10 +23,10 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory()->create([
             'name' => 'Gustavo',
             'email' => 'gespinozac@est.utn.ac.cr',
-            'phone' => '+50689633629',
+            'phone' => '89633629',
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-            'remember_token' => 'qwertyuiop'
+            'password' => '$2y$10$NfUS8KFiUdFZtNZRctyKbuOTuBPe2MbFr23dbjMv9juyfv7KRkUEy', // 1231231
+            'remember_token' => ''
         ]);
 
         \App\Models\Post::factory(10)->create(['user_id'=>'1','post_state_id'=>'1','plataform_id'=>'1']);
