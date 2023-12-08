@@ -27,5 +27,5 @@ Route::post('2fa',[TwoFactorController::class,'store'])->name('2fa.post')->middl
 
 // Post
 Route::get('posts',[PostController::class,'show'])->name('posts')->middleware('2fa');
-Route::get('post/create',[PostController::class,'create'])->name('posts.create')>middleware('2fa');
+Route::get('post/create',[PostController::class,'create'])->name('posts.create')->middleware('2fa');
 Route::post('post',[PostController::class,'store'])->name('post.store')->middleware('2fa');
